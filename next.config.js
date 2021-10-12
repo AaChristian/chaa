@@ -10,4 +10,15 @@ module.exports = {
 
     return config;
   },
+  redirects() {
+    return [
+      ["1", "true", "on"].includes(process.env.MAINTENANCE_MODE)
+        ? {
+            source: "/((?!maintenance).*)",
+            destination: "/maintenance.html",
+            permanent: false,
+          }
+        : null,
+    ].filter(Boolean);
+  },
 };
