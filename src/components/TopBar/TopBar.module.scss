@@ -1,0 +1,33 @@
+.topBarContainer {
+  // height: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      margin: 0 1rem;
+      font-size: 0.95rem;
+
+      a {
+        color: var(--white);
+
+        &::before {
+          content: "#";
+          margin-right: 0.3rem;
+          color: var(--accent);
+        }
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}

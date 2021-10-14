@@ -1,0 +1,16 @@
+@import '../../styles/mixins.scss';
+
+.contactContainer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+
+  a {
+    @include linkButton;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}

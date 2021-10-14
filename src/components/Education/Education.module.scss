@@ -1,0 +1,35 @@
+.educationContainer {
+  background-color: var(--surface);
+  padding: 2rem;
+  padding-bottom: 1rem;
+  box-shadow: 0px 5px 12px var(--black-shadow);
+  border-radius: 3px;
+}
+
+.educationHeader {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: initial;
+  }
+}
+
+.educationHeaderLocationDate {
+  text-align: right;
+  opacity: 0.5;
+
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}
+
+.educationDescription {
+  padding-right: 50%;
+
+  @media (max-width: 600px) {
+    padding-right: 0;
+  }
+}

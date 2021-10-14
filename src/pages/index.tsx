@@ -1,8 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { BaseLayout } from "../components/BaseLayout";
-import { Skills } from "../components/Skills";
-import { AboutMe } from "../components/AboutMe";
+import { BaseLayout } from "@/components/BaseLayout";
+import { Technologies } from "@/components/Technologies";
+import { AboutMe } from "@/components/AboutMe/AboutMe";
+import { Education } from "@/components/Education";
+import { Contact } from "@/components/Contact";
 
 const Home: NextPage = () => {
   return (
@@ -14,10 +16,9 @@ const Home: NextPage = () => {
       </Head>
 
       <AboutMe />
-      <h1>Technologies I know</h1>
-      <Skills />
-      <h1>Education</h1>
-      <h1>Contact</h1>
+      <Technologies />
+      <Education />
+      <Contact />
     </BaseLayout>
   );
 };

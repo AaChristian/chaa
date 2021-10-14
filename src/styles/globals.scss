@@ -1,0 +1,43 @@
+html:root {
+  --white: #f3e7ff;
+  --background: #0D0217;
+  --primary-text: #A17BC3;
+  --accent: #9632F1;
+  --accent-dark: #1F003A;
+  --surface: #23043e;
+
+  --black-shadow: rgba(0, 0, 0, 0.25)
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Sora", sans-serif;
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--primary-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  padding: 4rem 0;
+  h1 {
+    font-size: 2.5rem;
+    display: inline-block;
+    background: -webkit-linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
+    background: -moz-linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
+    background: linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+}

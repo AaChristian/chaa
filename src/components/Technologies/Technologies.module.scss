@@ -17,15 +17,15 @@
 .skillCard {
   box-sizing: border-box;
   flex: 0 0 80px;
-  background-color: rgb(56, 56, 56);
+  background-color: var(--surface);
   display: flex;
   flex-direction: column;
   width: 80px;
   height: 80px;
   margin: 0.5rem;
-  padding: 0.5rem 0;
-
+  padding: 0.5rem;
   border-radius: 8px;
+  box-shadow: 0px 5px 5px var(--black-shadow);
 
   svg {
     height: 80%;
@@ -42,7 +42,7 @@
     padding: 0;
     font-size: 0.8rem;
     font-weight: bold;
-    color: rgb(167, 167, 167);
+    color: var(--primary-text);
   }
 }
 
