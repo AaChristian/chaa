@@ -1,0 +1,9 @@
+@import '../../styles/mixins.scss';
+
+.inlineLink {
+  @include linkBase;
+
+  &:hover {
+    border-bottom: 1px solid var(--accent);
+  }
+}

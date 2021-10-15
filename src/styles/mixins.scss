@@ -1,3 +1,8 @@
+@mixin linkBase {
+    color: var(--accent);
+    text-decoration: none;
+}
+
 @mixin linkButton {
     display: inline-block;
     color: var(--accent);

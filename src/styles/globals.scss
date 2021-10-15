@@ -1,5 +1,5 @@
 html:root {
-  --white: #f3e7ff;
+  --white: #eddbff;
   --background: #0D0217;
   --primary-text: #A17BC3;
   --accent: #9632F1;
@@ -28,16 +28,22 @@ a {
   box-sizing: border-box;
 }
 
+.logo {
+  font-weight: bold;
+}
+
 .section {
   padding: 4rem 0;
   h1 {
     font-size: 2.5rem;
+    margin-bottom: 2.5rem;
     display: inline-block;
-    background: -webkit-linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
-    background: -moz-linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
-    background: linear-gradient(to right, #9E37FF 0%, #E5E5E5 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--white);
+    // background: -webkit-linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
+    // background: -moz-linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
+    // background: linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
 
   }
 }
