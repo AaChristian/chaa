@@ -1,3 +1,5 @@
+@import './mixins.scss';
+
 html:root {
   --white: #eddbff;
   --background: #0D0217;
@@ -20,8 +22,11 @@ body {
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  @include linkBase;
+
+  &:hover {
+    border-bottom: 1px solid var(--accent);
+  }
 }
 
 * {

@@ -1,7 +1,19 @@
 .aboutMeContainer {
 
   h1 {
-    text-align: center;
+    margin: 0;
+  }
+  
+  h2 {
+    margin: 0.5rem 0 2rem 0;
+    font-size: 1.8rem;
+    opacity: 0.5;
+  }
+  
+  h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
   }
   
   p {
