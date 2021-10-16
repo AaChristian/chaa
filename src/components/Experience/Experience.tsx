@@ -12,25 +12,13 @@ interface Job {
 
 const jobs: Job[] = [
   {
-    company: "ABC Inc AS",
+    company: "Arctic",
     title: "Developer",
-    time: "January 2000 - Present",
-    link: "https://nrk.no",
+    time: "August 2018 - Present",
+    link: "https://arctic.com",
     description: [
-      "Iure et temporibus et.",
-      "Officia itaque autem laudantium dolor aliquam quia. Nostrum est et mollitia in voluptas error. Molestias vel enim iste. Voluptatem totam unde accusamus ut delectus repudiandae corporis. Magni dicta quo.",
-      "Tempora quibusdam ut aut iure maiores molestiae non ducimus.",
-    ],
-  },
-  {
-    company: "Exp 2",
-    title: "Developer",
-    time: "January 1998 - December 1999",
-    link: "https://vg.no",
-    description: [
-      "Iure et temporibus et.",
-      "Tempora quibusdam ut aut iure maiores molestiae non ducimus.",
-      "Unde accusamus ut delectus repudiandae corporis. Magni dicta quo.",
+      "Create internal and external websites for employees and customers",
+      "Inegrate internal systems with websites and batch jobs",
     ],
   },
 ];

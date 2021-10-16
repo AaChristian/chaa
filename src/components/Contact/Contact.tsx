@@ -6,10 +6,8 @@ export const Contact = () => {
       <div className={styles.contactContainer}>
         <h1>Contact</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque minus
-          recusandae, quidem ducimus aperiam repellendus officiis adipisci
-          suscipit possimus repellat atque dolorem, hic dolorum iste. Veritatis
-          cumque fugit ipsum esse?
+          Feel free to contact me even though I&apos;m not currently looking for
+          any new opportunities.
         </p>
         <a href="mailto:chrizzy89@gmail.com">Contact me</a>
       </div>

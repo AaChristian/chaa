@@ -6,23 +6,23 @@ export const Education = () => {
       <h1>Education</h1>
       <div className={styles.educationContainer}>
         <div className={styles.educationHeader}>
-          <div>
-            <b>Dataingeniør</b> <br />
-            Bachelor i ingeniørfag -Datateknikk
-          </div>
-          <div className={styles.educationHeaderLocationDate}>
-            Høgskolen i Sørøst-Norge
+          <b>Computer engineer</b> <br />
+          <h2>
+            University of South-Eastern Norway
             <br />
-            august2015-juni 2018
-          </div>
+            August 2015 - June 2018
+          </h2>
         </div>
-        <p className={styles.educationDescription}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias debitis
-          ipsam nostrum facilis dignissimos consequatur autem, rem excepturi
-          quae dolorum aperiam totam, explicabo ullam voluptas rerum cumque ex
-          labore hic!
-        </p>
-        <p>Bacheloroppgave: HoloLens for Flight Inspection System</p>
+        <div className={styles.educationBulletPoints}>
+          <div>Applications and website programming</div>
+          <div>Network and network safety</div>
+          <div>Penetration testing</div>
+          <div>Algorithms and optimization</div>
+          <div>Databases and operating systems</div>
+          <div>Business economics</div>
+        </div>
+        <p></p>
+        <p>Bachelor thesis: HoloLens for Flight Inspection System</p>
       </div>
     </div>
   );

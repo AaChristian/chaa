@@ -1,14 +1,8 @@
-.skillsContainer {
-  // background-color: gray;
-  // display: grid;
-  // grid-template-columns: auto auto auto auto;
-  // grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  // grid-gap: 1rem;
-  // grid-template-rows: auto;
-  // grid-template-columns: repeat(8, 1fr);
-  // grid-template-rows: 80px 80px;
-  // justify-content: center;
+.skillsDescription {
+  text-align: center;
+}
 
+.skillsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -26,6 +20,10 @@
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 0px 5px 5px var(--black-shadow);
+
+  &:hover {
+    transform: translate(0, -2px);
+  }
 
   svg {
     height: 80%;

@@ -17,8 +17,8 @@ export interface Skill {
 
 const skills: Skill[] = [
   { name: "React", icon: ReactIcon },
-  { name: "Javascript", icon: JavascriptIcon },
-  { name: "Typescript", icon: TypescriptIcon },
+  { name: "JavaScript", icon: JavascriptIcon },
+  { name: "TypeScript", icon: TypescriptIcon },
   { name: "Node.js", icon: NodeJsIcon },
   { name: "GraphQL", icon: GraphQLIcon },
   { name: "Next.js", icon: NextJsIcon },
@@ -30,7 +30,10 @@ const skills: Skill[] = [
 export const Technologies = () => {
   return (
     <div className="section" id="technologies">
-      <h1>Technologies I know</h1>
+      <h1>Technologies</h1>
+      <p className={styles.skillsDescription}>
+        These are some of the texhnologies I&apos;ve been working with recently
+      </p>
       <div className={styles.skillsContainer}>
         {skills.map((s) => (
           <div key={s.name} className={styles.skillCard}>
