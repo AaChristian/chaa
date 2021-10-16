@@ -14,6 +14,17 @@
   }
 }
 
+.topBarLogo {
+  a {
+    color: var(--white);
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      border: none;
+    }
+  }
+}
+
 .topBarNav {
   ul {
     display: flex;
@@ -34,6 +45,7 @@
 
         &:hover {
           color: var(--accent);
+          border: none;
         }
       }
     }

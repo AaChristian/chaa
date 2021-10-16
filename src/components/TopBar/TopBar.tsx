@@ -17,9 +17,13 @@ const homeLinks: Link[] = [
 export const TopBar = () => {
   return (
     <div className={styles.topBarContainer}>
-      <div className="logo">
+      <div className={styles.topBarLogo}>
         <Link href="/">CH.AA.</Link>
       </div>
+      {/* <input className="burger-btn" type="checkbox" id="burger-btn" />
+      <label className="burger-icon" htmlFor="burger-btn">
+        <span className="navicon"></span>
+      </label> */}
       <div className={styles.topBarNav}>
         <ul>
           {homeLinks.map((link) => (
