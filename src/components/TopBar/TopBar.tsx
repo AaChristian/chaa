@@ -1,9 +1,10 @@
-import Link from "next/link";
-import styles from "./TopBar.module.scss";
-import { LanguageSwitcher } from "../LanguageSwitcher";
-import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
 import classNames from "classnames";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { ThemeSwitcher } from "../ThemeSwitcher";
+import styles from "./TopBar.module.scss";
 
 interface Link {
   to: string;
@@ -61,6 +62,7 @@ export const TopBar = () => {
             ))}
           </ul>
           <LanguageSwitcher />
+          <ThemeSwitcher />
         </div>
       </div>
     </div>

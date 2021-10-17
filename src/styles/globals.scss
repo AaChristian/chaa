@@ -16,7 +16,6 @@ html:root {
   --selection-background: #eddbff2f;
 }
 
-html,
 body {
   padding: 0;
   margin: 0;
@@ -28,6 +27,14 @@ body {
   @media (max-width: 600px) {
     font-size: 14px;
   }
+}
+
+body.light-mode {
+  --white: #8b67af;
+  --background: #ffffff;
+  --primary-text: #121212;
+  --surface: #e0d0f1;
+  --accent-dark: #e2c2ff;
 }
 
 ::selection {

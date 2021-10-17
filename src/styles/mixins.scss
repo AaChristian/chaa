@@ -31,3 +31,11 @@
     // width: rem;
   }
 }
+
+@mixin buttonTransparent {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--white);
+}

@@ -1,24 +1,35 @@
 @import '../../styles/mixins.scss';
 
-.langSwitchContainer {
+.themeSwitchContainer {
   display: flex;
   margin-left: 2rem;
   
   button {
     @include buttonTransparent;
-    opacity: 0.3;
     font-size: 0.7rem;
+    opacity: 1;
 
     &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
+
+    svg {
+      height: 50%;
       opacity: 0.5;
+
+      path {
+        fill: var(--white);
+      }
     }
   }
 
   @media (max-width: 600px) {
     margin: 0;
-    margin-top: 2rem;
     button {
-      font-size: 1rem;
+      font-size: 2.5rem;
+      padding: 0;
     }
   }
 }
