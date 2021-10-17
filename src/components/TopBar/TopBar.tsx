@@ -20,10 +20,10 @@ export const TopBar = () => {
       <div className={styles.topBarLogo}>
         <Link href="/">CH.AA.</Link>
       </div>
-      {/* <input className="burger-btn" type="checkbox" id="burger-btn" />
-      <label className="burger-icon" htmlFor="burger-btn">
-        <span className="navicon"></span>
-      </label> */}
+      <input className={styles["burger-btn"]} type="checkbox" id="burger-btn" />
+      <label className={styles["burger-icon"]} htmlFor="burger-btn">
+        <span className={styles["navicon"]}></span>
+      </label>
       <div className={styles.topBarNav}>
         <ul>
           {homeLinks.map((link) => (
