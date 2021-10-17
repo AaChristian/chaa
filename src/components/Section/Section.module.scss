@@ -1,5 +1,5 @@
 .section {
-  padding: 4rem 0;
+  padding: 6rem 0;
   h1 {
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
@@ -10,5 +10,12 @@
     // background: linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
+    @media (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 2rem 0;
   }
 }

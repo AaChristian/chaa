@@ -9,7 +9,7 @@ interface SectionProps
 
 export const Section: React.FC<SectionProps> = ({ children, ...props }) => {
   return (
-    <Fade triggerOnce delay={200}>
+    <Fade triggerOnce delay={500}>
       <div className={styles.section} {...props}>
         {children}
       </div>
