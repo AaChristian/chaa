@@ -1,0 +1,23 @@
+.langSwitchContainer {
+  display: flex;
+  margin-left: 2rem;
+  
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+    color: var(--white);
+    opacity: 0.3;
+    font-size: 0.7rem;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.current {
+  opacity: 0.6 !important;
+}

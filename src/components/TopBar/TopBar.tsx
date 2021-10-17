@@ -1,5 +1,9 @@
 import Link from "next/link";
 import styles from "./TopBar.module.scss";
+import { LanguageSwitcher } from "../LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import classNames from "classnames";
 
 interface Link {
   to: string;
@@ -7,31 +11,57 @@ interface Link {
 }
 
 const homeLinks: Link[] = [
-  { to: "about", label: "About" },
-  { to: "technologies", label: "Technologies" },
-  { to: "experience", label: "Experience" },
-  { to: "education", label: "Education" },
-  { to: "contact", label: "Contact" },
+  { to: "about", label: "about" },
+  { to: "technologies", label: "technologies" },
+  { to: "experience", label: "experience" },
+  { to: "education", label: "education" },
+  { to: "contact", label: "contact" },
 ];
 
 export const TopBar = () => {
+  const { t } = useTranslation("sections");
+  const [isSticky, setIsSticky] = useState(false);
+
+  const handleScroll = () => {
+    setIsSticky(window.scrollY > 70 ? true : false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const topBarClassName = classNames(styles.topBarContainer, {
+    [styles.topBarContainerSticky]: isSticky,
+  });
+
   return (
-    <div className={styles.topBarContainer}>
-      <div className={styles.topBarLogo}>
-        <Link href="/">CH.AA.</Link>
-      </div>
-      <input className={styles["burger-btn"]} type="checkbox" id="burger-btn" />
-      <label className={styles["burger-icon"]} htmlFor="burger-btn">
-        <span className={styles["navicon"]}></span>
-      </label>
-      <div className={styles.topBarNav}>
-        <ul>
-          {homeLinks.map((link) => (
-            <li key={link.to}>
-              <a href={`#${link.to}`}>{link.label}</a>
-            </li>
-          ))}
-        </ul>
+    <div className={styles.topBarWrapper}>
+      <div className={topBarClassName}>
+        <div className={styles.topBarLogo}>
+          <Link href="/">CH.AA.</Link>
+        </div>
+        <input
+          className={styles["burger-btn"]}
+          type="checkbox"
+          id="burger-btn"
+        />
+        <label className={styles["burger-icon"]} htmlFor="burger-btn">
+          <span className={styles["navicon"]}></span>
+        </label>
+        <div className={styles.topBarNav}>
+          <ul>
+            {homeLinks.map((link) => (
+              <li key={link.to}>
+                <a href={`#${link.to}`}>{t(link.label)}</a>
+              </li>
+            ))}
+          </ul>
+          <LanguageSwitcher />
+        </div>
       </div>
     </div>
   );

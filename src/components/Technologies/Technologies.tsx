@@ -7,6 +7,7 @@ import NodeJsIcon from "@/images/nodejs.svg";
 import PhpIcon from "@/images/php.svg";
 import ReactIcon from "@/images/react.svg";
 import TypescriptIcon from "@/images/typescript.svg";
+import { useTranslation } from "react-i18next";
 import { Section } from "../Section";
 import styles from "./Technologies.module.scss";
 
@@ -28,11 +29,13 @@ const skills: Skill[] = [
 ];
 
 export const Technologies = () => {
+  const { t } = useTranslation("technologies");
+
   return (
     <Section id="technologies">
-      <h1>Technologies</h1>
+      <h1>{t("sections:technologies")}</h1>
       <p className={styles.skillsDescription}>
-        These are some of the texhnologies I&apos;ve been working with recently
+        {t("technologies:description")}
       </p>
       <div className={styles.skillsContainer}>
         {skills.map((s) => (

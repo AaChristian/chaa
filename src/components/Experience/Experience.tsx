@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { InlineLink } from "../InlineLink";
 import { Section } from "../Section";
 import styles from "./Experience.module.scss";
@@ -14,22 +15,23 @@ interface Job {
 const jobs: Job[] = [
   {
     company: "Arctic",
-    title: "Developer",
-    time: "August 2018 - Present",
+    title: "experience:arctic.title",
+    time: "experience:arctic.time",
     link: "https://arctic.com",
     description: [
-      "Create internal and external websites for employees and customers",
-      "Inegrate internal systems with websites and batch jobs",
+      "experience:arctic.description1",
+      "experience:arctic.description2",
     ],
   },
 ];
 
 export const Experience = () => {
+  const { t } = useTranslation("experience");
   const [selectedJob, setSelectedJob] = useState(jobs[0]);
 
   return (
     <Section id="experience">
-      <h1>Experience</h1>
+      <h1>{t("sections:experience")}</h1>
       <div className={styles.experienceContainer}>
         <div className={styles.experienceList}>
           <ul>
@@ -47,15 +49,15 @@ export const Experience = () => {
           </ul>
         </div>
         <div className={styles.experienceDetails}>
-          <span className={styles.experienceTitle}>{selectedJob.title}</span>
+          <span className={styles.experienceTitle}>{t(selectedJob.title)}</span>
           <span className={styles.experienceCompany}>
             &nbsp;@&nbsp;
             <InlineLink to={selectedJob.link}>{selectedJob.company}</InlineLink>
           </span>
-          <p className={styles.experienceTime}>{selectedJob.time}</p>
+          <p className={styles.experienceTime}>{t(selectedJob.time)}</p>
           <ul className={styles.experienceDescription}>
             {selectedJob.description.map((desc, descIndex) => (
-              <li key={descIndex}>{desc}</li>
+              <li key={descIndex}>{t(desc)}</li>
             ))}
           </ul>
         </div>
