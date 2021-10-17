@@ -1,9 +1,10 @@
 import { InlineLink } from "../InlineLink";
+import { Section } from "../Section";
 import styles from "./AboutMe.module.scss";
 
 export const AboutMe = () => {
   return (
-    <div className="section" id="about">
+    <Section id="about">
       <div className={styles.aboutMeContainer}>
         <h3>Hey, my name is</h3>
         <h1>Christian Aashamar</h1>
@@ -25,6 +26,6 @@ export const AboutMe = () => {
           <InlineLink to="https://arctic.com">Arctic</InlineLink>.
         </p>
       </div>
-    </div>
+    </Section>
   );
 };

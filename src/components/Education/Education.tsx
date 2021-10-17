@@ -1,8 +1,9 @@
+import { Section } from "../Section";
 import styles from "./Education.module.scss";
 
 export const Education = () => {
   return (
-    <div className="section" id="education">
+    <Section id="education">
       <h1>Education</h1>
       <div className={styles.educationContainer}>
         <div className={styles.educationHeader}>
@@ -24,6 +25,6 @@ export const Education = () => {
         <p></p>
         <p>Bachelor thesis: HoloLens for Flight Inspection System</p>
       </div>
-    </div>
+    </Section>
   );
 };

@@ -1,8 +1,9 @@
+import { Section } from "../Section";
 import styles from "./Contact.module.scss";
 
 export const Contact = () => {
   return (
-    <div className="section" id="contact">
+    <Section id="contact">
       <div className={styles.contactContainer}>
         <h1>Contact</h1>
         <p>
@@ -11,6 +12,6 @@ export const Contact = () => {
         </p>
         <a href="mailto:chrizzy89@gmail.com">Contact me</a>
       </div>
-    </div>
+    </Section>
   );
 };

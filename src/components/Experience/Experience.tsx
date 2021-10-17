@@ -1,6 +1,7 @@
 import { useState } from "react";
-import styles from "./Experience.module.scss";
 import { InlineLink } from "../InlineLink";
+import { Section } from "../Section";
+import styles from "./Experience.module.scss";
 
 interface Job {
   company: string;
@@ -27,7 +28,7 @@ export const Experience = () => {
   const [selectedJob, setSelectedJob] = useState(jobs[0]);
 
   return (
-    <div className="section" id="experience">
+    <Section id="experience">
       <h1>Experience</h1>
       <div className={styles.experienceContainer}>
         <div className={styles.experienceList}>
@@ -59,6 +60,6 @@ export const Experience = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };

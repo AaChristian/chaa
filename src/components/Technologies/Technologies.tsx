@@ -1,14 +1,14 @@
-import styles from "./Technologies.module.scss";
-import ReactIcon from "@/images/react.svg";
-import JavascriptIcon from "@/images/javascript.svg";
-import NodeJsIcon from "@/images/nodejs.svg";
-import TypescriptIcon from "@/images/typescript.svg";
-import ExpressIcon from "@/images/express.svg";
 import GraphQLIcon from "@/images/graphql.svg";
-import NextJsIcon from "@/images/nextjs.svg";
-import PhpIcon from "@/images/php.svg";
+import JavascriptIcon from "@/images/javascript.svg";
 import LaravelIcon from "@/images/laravel.svg";
+import NextJsIcon from "@/images/nextjs.svg";
 import nginxIcon from "@/images/nginx.svg";
+import NodeJsIcon from "@/images/nodejs.svg";
+import PhpIcon from "@/images/php.svg";
+import ReactIcon from "@/images/react.svg";
+import TypescriptIcon from "@/images/typescript.svg";
+import { Section } from "../Section";
+import styles from "./Technologies.module.scss";
 
 export interface Skill {
   name: string;
@@ -29,7 +29,7 @@ const skills: Skill[] = [
 
 export const Technologies = () => {
   return (
-    <div className="section" id="technologies">
+    <Section id="technologies">
       <h1>Technologies</h1>
       <p className={styles.skillsDescription}>
         These are some of the texhnologies I&apos;ve been working with recently
@@ -42,6 +42,6 @@ export const Technologies = () => {
           </div>
         ))}
       </div>
-    </div>
+    </Section>
   );
 };
