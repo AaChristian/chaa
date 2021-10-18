@@ -9,8 +9,8 @@
   "aboutMe": {
     "myNameIs": "Hey, my name is",
     "softwareEngineer": "Software engineer",
-    "paragraph1": "I am a passionate and creative person that learns fast, is solution oriented and execution. I have always been very interested in IT, especially programming and other creative work in gaming, animation and film. I have used a lot of my free time to learn and evolve in these areas. It was therefore natural for me to go to scholl as a computer engineer and it is amazing to work with what I love to do.",
-    "paragraph2": "I started in early/middle 2000s by creating simple websites for personal use using HTML and CSS. This eventually got me into creating websites with PHP and since 2018 I have mostly focused on building websites with React and Node.js, which is one of the things I do at"
+    "paragraph1": "I am a passionate and creative person that learns fast, is solution oriented and good at implementation. I have always been very interested in IT, especially programming and other creative work in gaming, animation and film. I have used a lot of my free time to learn and evolve in these areas. It was therefore natural for me to go to school as a computer engineer and it is amazing to work with what I love to do.",
+    "paragraph2": "I started in early/middle 2000s by creating simple websites for personal use with HTML and CSS. This eventually got me into creating more complex websites with PHP and since 2018 I have mostly focused on building websites with React and Node.js, which is one of the things I do at"
   },
   "technologies": {
     "description": "These are some of the texhnologies I've been working with recently"
