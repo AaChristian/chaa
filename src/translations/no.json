@@ -1,4 +1,8 @@
 {
+  "common": {
+    "builtWith": "Laget med",
+    "by": "av"
+  },
   "sections": {
     "about": "Om",
     "technologies": "Teknologier",

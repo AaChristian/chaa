@@ -1,4 +1,8 @@
 {
+  "common": {
+    "builtWith": "Built with",
+    "by": "by"
+  },
   "sections": {
     "about": "About",
     "technologies": "Technologies",

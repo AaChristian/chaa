@@ -1,6 +1,7 @@
 import GitHubIcon from "@/images/github.svg";
 import LinkedInIcon from "@/images/linkedin.svg";
 import { ReactNode, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { InlineLink } from "../InlineLink";
 import { TopBar } from "../TopBar";
 import styles from "./BaseLayout.module.scss";
@@ -10,6 +11,8 @@ interface BaseLayoutProps {
 }
 
 export const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
+  const { t } = useTranslation("common");
+
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 600px)").matches;
     const closeMobileNav = () =>
@@ -50,7 +53,10 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
       <TopBar />
       <div className={styles.content}>{children}</div>
       <div className={styles.footer}>
-        <div>Copyright © Christian Aashamar {new Date().getFullYear()}</div>
+        <div>
+          {t("builtWith")} Next.js {t("by")} Christian Aashamar&nbsp;-&nbsp;
+          {new Date().getFullYear()}
+        </div>
         <div>
           <InlineLink to="https://github.com/AaChristian">
             <GitHubIcon />
