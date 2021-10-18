@@ -33,7 +33,7 @@ export const Experience = () => {
     <Section id="experience">
       <h1>{t("sections:experience")}</h1>
       <div className={styles.experienceContainer}>
-        <div className={styles.experienceList}>
+        {/* <div className={styles.experienceList}>
           <ul>
             {jobs.map((job, index) => (
               <li
@@ -47,7 +47,7 @@ export const Experience = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div className={styles.experienceDetails}>
           <span className={styles.experienceTitle}>{t(selectedJob.title)}</span>
           <span className={styles.experienceCompany}>
