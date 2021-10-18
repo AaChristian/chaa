@@ -1,5 +1,5 @@
-import GitHubIcon from "@/images/github.svg";
-import LinkedInIcon from "@/images/linkedin.svg";
+import GitHubIcon from "@/icons/github.svg";
+import LinkedInIcon from "@/icons/linkedin.svg";
 import { ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { InlineLink } from "../InlineLink";

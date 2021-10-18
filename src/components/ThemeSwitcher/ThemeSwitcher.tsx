@@ -1,5 +1,5 @@
-import MoonIcon from "@/images/moon.svg";
-import SunIcon from "@/images/sun.svg";
+import MoonIcon from "@/icons/moon.svg";
+import SunIcon from "@/icons/sun.svg";
 import { useEffect, useState } from "react";
 import { isServer } from "src/utils/isServer";
 import styles from "./ThemeSwitcher.module.scss";
