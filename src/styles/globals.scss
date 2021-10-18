@@ -14,6 +14,8 @@ html:root {
   
   --black-shadow: rgba(0, 0, 0, 0.25);
   --selection-background: #eddbff2f;
+
+  --logo-font: 'Norican', cursive;
 }
 
 body {
@@ -35,6 +37,8 @@ body.light-mode {
   --primary-text: #121212;
   --surface: #e0d0f1;
   --accent-dark: #e2c2ff;
+
+  --selection-background: #431d6a2f;
 }
 
 ::selection {
