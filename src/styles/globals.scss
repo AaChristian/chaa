@@ -22,17 +22,18 @@ body {
   font-size: 16px;
   background-color: var(--background);
   color: var(--primary-text);
-
+  
   @media (max-width: 600px) {
     font-size: 14px;
   }
 }
 
 body.light-mode {
-  --white: #8b67af;
+  --white: #6b1db7;
   --background: #ffffff;
   --primary-text: #121212;
   --surface: #e0d0f1;
+  --accent: #7600a8;
   --accent-dark: #e2c2ff;
 
   --selection-background: #431d6a2f;
@@ -78,4 +79,75 @@ a {
 
 .logo {
   font-weight: bold;
+}
+
+.levelDesignIntro {
+  height: 200px;
+  // width: 100%;
+  // background-image: url("../../public/images/leveldesign.svg");
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  top: 0;
+  
+  display: flex;
+  
+  svg {
+    // display: block;
+    width: 300px;
+    // float: right;
+    // position: absolute;
+    // svg {
+      // padding-right: 30%;
+      // display: inline-block;
+    // }
+    path {
+      // d: path('M3.5 58.5L108.5 3L131.5 68L84 129L13 119.5L3.5 58.5Z');
+      // fill: none;
+      // animation-name: path;
+      // animation-duration: 5s;
+      // animation-timing-function: ease-in;
+      // animation-fill-mode: forwards;
+      stroke-dasharray: 497;
+      stroke-dashoffset: 497;
+      animation: draw 1000ms 4ms forwards infinite;
+    }
+    
+    rect {
+      fill: green !important;
+      stroke: green;
+      fill-opacity: 0;
+      animation: flash 1000ms infinite;
+      animation-delay: 4ms;
+    }
+
+    @keyframes draw {
+      0% { stroke-dashoffset: 497}
+      100% { stroke-dashoffset: 0}
+    }
+    @keyframes flash {
+      to { fill: red !important;}
+      // 0% { fill: red;}
+      // 100% { stroke-dashoffset: 0}
+    }
+
+    // @keyframes rect {
+    //   0% {
+    //     rect:nth-of-type(1) { stroke: red; }
+    //   }
+    // }
+    // @keyframes path {
+
+    //   0% {
+    //     d: path('M3.5 58.5L108.5');
+    //   }
+      
+    //   50% {
+    //     d: path('M3.5 58.5L108.5 3L131.5'); 
+    //   }
+
+    //   100% {
+    //     d: path('M3.5 58.5L108.5 3L131.5 68L84 129L13 119.5L3.5 58.5Z'); 
+    //   }
+    // }
+  }
 }
