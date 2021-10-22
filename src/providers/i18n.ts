@@ -17,7 +17,7 @@ i18n.use(initReactI18next).init({
   },
 });
 
-i18n.on('languageChanged', (lng: Language) => document.documentElement.setAttribute('lang', lng))
+i18n.on('languageChanged', (lng: Language) => !isServer() && document.documentElement.setAttribute('lang', lng))
 
 export const getLangaugeInLS = () => {
   return !isServer() ? localStorage.getItem("langauge") || "en" : null;
