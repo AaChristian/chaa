@@ -58,10 +58,13 @@ export const BaseLayout: React.FC<BaseLayoutProps> = ({ children }) => {
           {new Date().getFullYear()}
         </div>
         <div>
-          <InlineLink to="https://github.com/AaChristian">
+          <InlineLink to="https://github.com/AaChristian" aria-label="GitHub">
             <GitHubIcon />
           </InlineLink>
-          <InlineLink to="https://www.linkedin.com/in/christian-aashamar-00ba33158">
+          <InlineLink
+            to="https://www.linkedin.com/in/christian-aashamar-00ba33158"
+            aria-label="LinkedIn"
+          >
             <LinkedInIcon />
           </InlineLink>
         </div>

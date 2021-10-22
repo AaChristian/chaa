@@ -33,7 +33,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <div className={styles.themeSwitchContainer}>
-      <button onClick={() => toggleTheme()}>
+      <button onClick={() => toggleTheme()} aria-label="Toggle Theme">
         {theme === "dark" ? <SunIcon /> : <MoonIcon />}
       </button>
     </div>
