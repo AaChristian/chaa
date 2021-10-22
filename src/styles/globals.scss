@@ -1,9 +1,9 @@
 @import './mixins.scss';
 
 html:root {
-  --white: #eddbff;
   --background: #231c2a;
   --primary-text: #be90d4;
+  --secondary-text: #eddbff;
   --accent: #bf55ec;
   --accent-dark: #1f132a;
   --accent-light: #7440a9;
@@ -29,9 +29,9 @@ body {
 }
 
 body.light-mode {
-  --white: #6b1db7;
   --background: #ffffff;
   --primary-text: #121212;
+  --secondary-text: #6b1db7;
   --surface: #e0d0f1;
   --accent: #7600a8;
   --accent-dark: #e2c2ff;

@@ -4,10 +4,10 @@
     font-size: 2.5rem;
     margin-bottom: 2.5rem;
     display: inline-block;
-    color: var(--white);
-    // background: -webkit-linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
-    // background: -moz-linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
-    // background: linear-gradient(to top, var(--accent) 0%, var(--white) 70%);
+    color: var(--secondary-text);
+    // background: -webkit-linear-gradient(to top, var(--accent) 0%, var(--secondary-text) 70%);
+    // background: -moz-linear-gradient(to top, var(--accent) 0%, var(--secondary-text) 70%);
+    // background: linear-gradient(to top, var(--accent) 0%, var(--secondary-text) 70%);
     // -webkit-background-clip: text;
     // -webkit-text-fill-color: transparent;
     @media (max-width: 600px) {
@@ -16,6 +16,6 @@
   }
 
   @media (max-width: 600px) {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
