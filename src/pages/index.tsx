@@ -12,7 +12,6 @@ const Home: NextPage = () => {
     <BaseLayout>
       <Head>
         <title>Christian Aashamar</title>
-        <html lang="en" />
         <meta name="title" content="Christian Aashamar" />
         <meta
           name="description"
