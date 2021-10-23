@@ -12,7 +12,7 @@ interface Link {
 }
 
 const homeLinks: Link[] = [
-  { to: "about", label: "about" },
+  { to: "", label: "about" },
   { to: "technologies", label: "technologies" },
   { to: "experience", label: "experience" },
   { to: "education", label: "education" },
