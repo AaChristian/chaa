@@ -31,11 +31,10 @@
 
 .topBarLogo {
   a {
-    opacity: 0.9;
+    opacity: 0.8;
     font-family: var(--logo-font);
     font-size: 2rem;
-    -webkit-text-stroke: 0.5px var(--secondary-text);
-    color: transparent;
+    color: var(--secondary-text);
     &:hover {
       opacity: 1;
       border: none;

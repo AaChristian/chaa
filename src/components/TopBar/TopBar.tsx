@@ -43,7 +43,7 @@ export const TopBar = () => {
     <div className={styles.topBarWrapper}>
       <div className={topBarClassName}>
         <div className={styles.topBarLogo}>
-          <Link href="/">chaa</Link>
+          <Link href="/">Chaa</Link>
         </div>
         <input
           className={styles["burger-btn"]}
