@@ -23,8 +23,8 @@ const skills: Skill[] = [
   { name: "Node.js", icon: NodeJsIcon },
   { name: "GraphQL", icon: GraphQLIcon },
   { name: "Next.js", icon: NextJsIcon },
-  { name: "PHP", icon: PhpIcon },
-  { name: "Laravel", icon: LaravelIcon },
+  // { name: "PHP", icon: PhpIcon },
+  // { name: "Laravel", icon: LaravelIcon },
   { name: "NGINX", icon: nginxIcon },
 ];
 
